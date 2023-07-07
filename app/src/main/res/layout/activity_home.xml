@@ -9,6 +9,7 @@
     tools:context=".HomeActivity">
 
     <GridLayout
+        android:id="@+id/grid_home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
@@ -263,4 +264,5 @@
 
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
 </RelativeLayout>
