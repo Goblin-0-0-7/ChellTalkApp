@@ -1,6 +1,7 @@
 package de.goblin.chelltalkapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
@@ -15,7 +16,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
     }
     public void onClick(View view) {
         Animation button_animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.ani_cardview_clicked);
