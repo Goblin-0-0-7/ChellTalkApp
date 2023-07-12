@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4055" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable/ani_cardview_clicked.xml" value="0.4045" />
+        <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable/custom_scrollbar.xml" value="0.299" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.4055" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable/ic_baseline_build_24.xml" value="0.4055" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/drawable/ic_baseline_cloud_24.xml" value="0.4055" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/layout/activity_dashboard.xml" value="0.40625" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/layout/activity_home.xml" value="0.40625" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/layout/activity_main.xml" value="0.40625" />
+        <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/layout/drop_down_item.xml" value="0.328515625" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/layout/toolbar.xml" value="0.4395833333333333" />
         <entry key="..\:/Programme/AndroidStudioProjekts/ChellTalkApp/app/src/main/res/xml/cardview_animation.xml" value="0.40520833333333334" />
       </map>

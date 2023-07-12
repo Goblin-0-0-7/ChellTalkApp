@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/creme_gray"
     tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textinputlayout_ownSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="scanDevices"
+        android:text="Scan" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -25,23 +34,35 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <Spinner
-        android:id="@+id/spinner_pairedDevices"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout_ownSpinner"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:contentDescription="Select Device"
-        android:minHeight="48dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner_pairedDevices"
-        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="70dp"
         android:layout_marginTop="30dp"
-        android:onClick="scanDevices"
-        android:text="Scan" />
+        android:hint="Select Device"
+        android:textColorHint="@color/creme_3"
+        app:boxBackgroundColor="@color/creme"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="@color/creme_2"
+        app:boxStrokeWidth="4dp"
+        app:endIconTint="@color/creme_3"
+        app:hintTextColor="@color/creme_3">
+        <!-- boxStrokeColor changed in colors.xml, override necessary, should be looked at more closely   -->
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletetextview_pairedDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:textColor="@color/creme_3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </RelativeLayout>
