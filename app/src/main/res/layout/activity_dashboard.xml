@@ -12,10 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textinputlayout_ownSpinner"
-        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/spacer_buttons"
         android:layout_marginTop="30dp"
         android:onClick="scanDevices"
         android:text="Scan" />
+
+    <Space
+        android:id="@+id/spacer_buttons"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_connectHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textinputlayout_ownSpinner"
+        android:layout_toEndOf="@id/spacer_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="handleConnectionDevice"
+        android:text="Connect" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -53,15 +70,16 @@
         app:boxStrokeWidth="4dp"
         app:endIconTint="@color/creme_3"
         app:hintTextColor="@color/creme_3">
-        <!-- boxStrokeColor changed in colors.xml, override necessary, should be looked at more closely   -->
+        <!-- boxStrokeColor changed in colors.xml, override necessary, should be looked at more closely
+        -->
+
 
         <AutoCompleteTextView
             android:id="@+id/autocompletetextview_pairedDevices"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="false"
-            android:inputType="none"
-            android:textColor="@color/creme_3" />
+            android:inputType="none"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
